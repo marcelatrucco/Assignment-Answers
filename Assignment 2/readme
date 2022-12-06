@@ -1,0 +1,5 @@
+
+Due to my lack of knowledge in programming, I was unable to complete the assignment as it was formulated. I, however, analyzed the Arabidopsis genelist looking for protein interactions in the STRING website, which has a very comprehensive compilation of protein-protein interactions. 
+The script looks at every gene in the list, get the STRING entry for that gene and retrieve its network. When found, the Kegg annotation is reported along with the GO ontology for genes in Arabidopsis list.
+I spent several days working on the assignment in order to show the best possible work with the limitations of my programming skills. The work was realized with help of Paloma Tejera Nevado.
+The script can be run from the console with the input: Interactome.rb   Ara_GeneList.txt.
