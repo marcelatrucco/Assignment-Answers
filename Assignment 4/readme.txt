@@ -10,10 +10,10 @@ makeblastdb -in seq_db.fa -parse_seqids -dbtype 'nucl' -out seq_db, respectively
 
 The code is written in blast_retrieval.rb
 
-1.The first Blast (blastx) was done with Arabidopsis DNA seq (seq.fa) against the S. Pombe protein db (protein_db.fa).(**) 
+1.The first Blast (blastx) was done with Arabidopsis DNA seq (seq.fa) against the S. Pombe protein db (protein_db).(**) 
 Best protein hits IDs (e-value <= 1.10-6) were saved and their sequences were retrieved from S. Pombe db, to be used in the next blast (as myfile). 
 
-2.The second Blast (tblastn) was done using protein best hits from the previous step against Arabidopsis DNA db, with the same e-value threshold. 
+2.The second Blast (tblastn) was done using protein best hits from the previous step against Arabidopsis DNA db (seq_db), with the same e-value threshold. 
 
 3.The results of both Blast searches were compared to retrieve the shared results, which should be good reciprocal orthologues candidates.
 
